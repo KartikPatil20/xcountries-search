@@ -20,13 +20,13 @@ export default function App() {
 
     <>
     <div className="searchbar">
-        <input placeholder="Search for Countries..." type="search" value={search} onChange={(e) => setSearch(e.target.value)} />
+        <input placeholder="Search for Countries..." type="text" value={search} onChange={(e) => setSearch(e.target.value)} />
     </div>
     <div className="App">
       { filteredCountries.map((country) => (
       <div className="country" key={country.cca3}>
         <img src={country.flags.png} alt={country.flags.alt} />
-        <h1>{country.name.common}</h1>
+        <h2>{country.name.common}</h2>
       </div>
       ))
       }
