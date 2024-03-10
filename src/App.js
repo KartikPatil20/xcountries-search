@@ -24,7 +24,7 @@ export default function App() {
     </div>
     <div className="App">
       { filteredCountries.map((country) => (
-      <div className="country" key={country.cca3}>
+      <div className="countryCard" key={country.cca3}>
         <img src={country.flags.png} alt={country.flags.alt} />
         <h2>{country.name.common}</h2>
       </div>

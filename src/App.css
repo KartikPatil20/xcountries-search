@@ -17,7 +17,7 @@ input{
   justify-content: center;
 }
 
-.country {
+.countryCard {
   width: 250px;
   display: flex;
   flex-wrap: wrap;
